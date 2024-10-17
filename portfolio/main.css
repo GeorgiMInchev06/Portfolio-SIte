@@ -2,15 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: auto;
     padding: auto;
-    background-color: #f4f4f4;
+    background-image: url("images/Background.jpg");
+    height: 879px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
 }
 
 header {
+    background: transparent;
+    backdrop-filter: blur(10px);
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 0.1px;
     text-align: center;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -36,10 +44,10 @@ nav ul li a {
 }
 
 #about, #projects, #contact {
-    padding: 20px;
+    padding: 16.96px;
     margin: 20px auto;
     max-width: 800px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -59,11 +67,39 @@ nav ul li a {
     text-align: center;
 }
 
+.project a {
+    text-decoration: none;
+    color:#333;
+}
+
 footer {
     text-align: center;
     background-color: #333;
     color: white;
-    position: relative;
+    position: static;
     width: 100%;
 }
-
+.socialIcons{
+    display: flex;
+    justify-content: start;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
